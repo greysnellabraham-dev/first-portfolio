@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Aroma</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Menú -->
+    <header class="header">
+        <div class="logo">☕ Café Aroma</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#contador">Estadísticas</a></li>
+                <li><a href="#testimonios">Testimonios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <div class="menu-toggle">☰</div>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section id="inicio" class="hero">
+        <h1>Bienvenido a Café Aroma</h1>
+        <p>Un lugar donde cada sorbo cuenta una historia</p>
+        <a href="#contacto" class="btn">Haz tu pedido</a>
+    </section>
+
+    <!-- Galería -->
+    <section id="galeria" class="gallery">
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93" alt="Café 1">
+        <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348" alt="Café 2">
+        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085" alt="Café 3">
+    </section>
+
+    <!-- Contador -->
+    <section id="contador" class="counter-section">
+        <div class="counter-box">
+            <span id="counter1" class="counter">0</span>
+            <p>Tazas servidas</p>
+        </div>
+        <div class="counter-box">
+            <span id="counter2" class="counter">0</span>
+            <p>Clientes felices</p>
+        </div>
+        <div class="counter-box">
+            <span id="counter3" class="counter">0</span>
+            <p>Recetas únicas</p>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section id="testimonios" class="testimonials">
+        <h2>Lo que dicen nuestros clientes</h2>
+        <div class="testimonial-container">
+            <div class="testimonial active">"El mejor café de la ciudad" – Ana</div>
+            <div class="testimonial">"Ambiente acogedor y atención increíble" – Juan</div>
+            <div class="testimonial">"Siempre vuelvo por más" – María</div>
+        </div>
+        <div class="testimonial-buttons">
+            <button class="prev">⬅</button>
+            <button class="next">➡</button>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="contact">
+        <h2>Contáctanos</h2>
+        <form>
+            <input type="text" name="name" placeholder="Tu nombre">
+            <input type="email" name="email" placeholder="Tu email">
+            <textarea name="message" placeholder="Tu mensaje"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        <p>📍 Av. Principal, Ciudad Café</p>
+        <p>📞 +58 555-1234567</p>
+        <p>✉ contacto@cafearoma.com</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Café Aroma. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
