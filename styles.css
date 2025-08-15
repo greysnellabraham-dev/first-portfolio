@@ -1,0 +1,174 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #2b1d1a;
+    color: #f5e1c8;
+}
+
+/* Menú */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3b2a26;
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+.nav-links a {
+    text-decoration: none;
+    color: #f5e1c8;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+.nav-links a:hover {
+    color: #d4a373;
+}
+.menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 8rem 2rem 4rem;
+    background: linear-gradient(rgba(43, 29, 26, 0.9), rgba(43, 29, 26, 0.9)),
+                url('https://images.unsplash.com/photo-1509042239860-f550ce710b93') center/cover;
+}
+.hero h1 {
+    font-size: 2.5rem;
+}
+.hero p {
+    margin: 1rem 0;
+}
+.btn {
+    background-color: #d4a373;
+    color: #2b1d1a;
+    padding: 0.7rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+.btn:hover {
+    background-color: #b5835a;
+}
+
+/* Galería */
+.gallery {
+    display: flex;
+    gap: 1rem;
+    padding: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.gallery img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Contadores */
+.counter-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem 1rem;
+    background-color: #3b2a26;
+}
+.counter-box {
+    text-align: center;
+}
+.counter {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #d4a373;
+}
+
+/* Testimonios */
+.testimonials {
+    text-align: center;
+    padding: 3rem 1rem;
+}
+.testimonial-container {
+    min-height: 60px;
+    margin-bottom: 1rem;
+}
+.testimonial {
+    display: none;
+}
+.testimonial.active {
+    display: block;
+}
+.testimonial-buttons button {
+    background: #d4a373;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+/* Contacto */
+.contact {
+    text-align: center;
+    padding: 3rem 1rem;
+}
+.contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+    gap: 1rem;
+}
+.contact input, .contact textarea, .contact button {
+    padding: 0.7rem;
+    border: none;
+    border-radius: 5px;
+}
+.contact button {
+    background: #d4a373;
+    color: #2b1d1a;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #3b2a26;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-links {
+        position: fixed;
+        top: 60px;
+        right: -100%;
+        background: #3b2a26;
+        flex-direction: column;
+        width: 100%;
+        height: calc(100% - 60px);
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        transition: right 0.3s ease-in-out;
+    }
+    .nav-links.active {
+        right: 0;
+    }
+    .menu-toggle {
+        display: block;
+    }
+}
